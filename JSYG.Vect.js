@@ -2,7 +2,8 @@
     
     if (typeof define == 'function' && define.amd) define(["jsyg-point"],factory);
     else {
-        if (typeof Point != "undefined") root.Vect = factory(Point);
+        if (typeof JSYG != "undefined" && JSYG.Point) JSYG.Vect = factory(JSYG.Point);
+        else if (typeof Point != "undefined") root.Vect = factory(Point);
         else throw new Error("You need JSYG.Point module");
     }
     
@@ -59,11 +60,7 @@
      * @returns {Number}
      */
     Vect.prototype.dot = function(vect) { return (this.x * vect.x) + (this.y * vect.y); };
-    
-    
-    
-    if (typeof JSYG != "undefined") JSYG.Vect = Vect;
-    
+        
     return Vect;
     
 });
