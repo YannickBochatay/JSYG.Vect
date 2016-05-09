@@ -1,0 +1,28 @@
+{
+  "name": "jsyg-vect",
+  "version": "0.1.5",
+  "description": "Vector constructor for JSYG",
+  "main": "JSYG.Vect.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YannickBochatay/JSYG.Vect.git"
+  },
+  "keywords": [
+    "svg",
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "author": "Yannick Bochatay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickBochatay/JSYG.Vect/issues"
+  },
+  "homepage": "https://github.com/YannickBochatay/JSYG.Vect#readme"
+}
