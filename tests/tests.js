@@ -2,12 +2,14 @@ if (typeof require!= "undefined") {
     
     require.config({
         paths: {
-            "jsyg-point": '../bower_components/jsyg-point/JSYG.Point',
+            "jsyg-point": '../node_modules/jsyg-point/JSYG.Point',
             "jsyg-vect": '../JSYG.Vect'
         },
         urlArgs: "bust=" + (+new Date())
     });
 }
+
+QUnit.config.autostart = false;
 
 (function(factory) {
     
@@ -16,24 +18,28 @@ if (typeof require!= "undefined") {
     
 }(function(Vect) {
 
+    QUnit.start()
+
+    const { module, test } = QUnit
+
     module("Vect");
     
-    test("Création d'un vecteur", function() {
+    test("Création d'un vecteur", assert => {
         
         var vect = new Vect(2,5);
 
-        expect(2);
-        ok(vect instanceof Vect,"instance de Vect");
-        ok(vect instanceof Vect.prototype.constructor,"instance de Point");
+        assert.expect(2);
+        assert.ok(vect instanceof Vect,"instance de Vect");
+        assert.ok(vect instanceof Vect.prototype.constructor,"instance de Point");
     });
     
-    test("Longueur d'un vecteur", function() {
+    test("Longueur d'un vecteur", assert => {
         
         var vect = new Vect(5,5);
 
-        expect(1);
+        assert.expect(1);
         
-        equal( Math.round(vect.length()) , 7 ,"longueur de vect");
+        assert.equal( Math.round(vect.length()) , 7 ,"longueur de vect");
     });
     
 }));

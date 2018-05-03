@@ -1,6 +1,6 @@
 {
   "name": "jsyg-vect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vector constructor for JSYG",
   "main": "JSYG.Vect.js",
   "directories": {
@@ -26,6 +26,10 @@
   },
   "homepage": "https://github.com/YannickBochatay/JSYG.Vect#readme",
   "dependencies": {
-    "jsyg-point": ""
+    "jsyg-point": "^1.0.0"
+  },
+  "devDependencies": {
+    "qunit": "^2.6.0",
+    "requirejs": "^2.3.5"
   }
 }
