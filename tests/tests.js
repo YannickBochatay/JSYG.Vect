@@ -13,7 +13,7 @@ QUnit.config.autostart = false;
 
 (function(factory) {
     
-    if (typeof define == 'function' && define.amd) define(["jsyg-vect"],factory);
+    if (typeof define == 'function' && define.amd) require(["jsyg-vect"],factory);
     else factory(Vect);
     
 }(function(Vect) {

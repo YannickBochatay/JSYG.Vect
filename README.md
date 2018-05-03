@@ -5,9 +5,8 @@ Vectors constructor for [JSYG framework](https://github.com/YannickBochatay/JSYG
 ```shell
 npm install jsyg-vect
 ```
-You can also install it with bower.
 
-### Example with webpack/babel
+### Example with webpack
 ```javascript
 import Vect from "jsyg-vect"
 
