@@ -1,6 +1,8 @@
 # JSYG.Vect
 Vectors constructor for [JSYG framework](https://github.com/YannickBochatay/JSYG) or standalone
 
+## ⚠️ Deprecated. Use [@jsyg/vect](https://github.com/YannickBochatay/jsyg-monorepo/tree/main/packages/vect) instead.
+
 ### Installation
 ```shell
 npm install jsyg-vect
